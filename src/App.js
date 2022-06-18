@@ -10,9 +10,10 @@ import Projects from './Components/Projects'
 function App() {
   return (
    <BrowserRouter>
+   <Navbar/>
     <Routes>
 
-    <Route path='/' exact element = {<Home/>} />
+    <Route path='/'  element = {<Home/>} />
     <Route path='/about' element = {<About/>} />
     <Route path='/post' element = {<Post/>} />
     <Route path='/post/:slug' element = {<SinglePost/>} />
